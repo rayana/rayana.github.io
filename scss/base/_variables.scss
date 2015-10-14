@@ -1,42 +1,57 @@
-// Typography
-$base-font-family: $helvetica;
-$heading-font-family: $base-font-family;
-
-// Font Sizes
-$base-font-size: 1em;
-
-// Line height
-$base-line-height: 1.5;
-$heading-line-height: 1.2;
-
-// Other Sizes
-$base-border-radius: 3px;
-$base-spacing: $base-line-height * 1em;
-$small-spacing: $base-spacing / 2;
-$base-z-index: 0;
-
 // Colors
 $blue: #477dca;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
+$green: #1be8cf;
+$white: #fff;
 
-// Font Colors
-$base-font-color: $dark-gray;
-$action-color: $blue;
+// Typography
+$base-font-family: $helvetica;
+$open-sans: 'Open Sans', sans-serif;
+$heading-font-family: $base-font-family;
 
-// Border
+$font-weight-regular: 400;
+$font-weight-bold: 800;
+$font-italic: italic;
+
+// Font Sizes
+$base-font-size: rem(14);
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+$font-xs: rem(10);
+$font-sm: rem(12);
+$font-lrg: rem(20);
+
+$h1-font-size: $base-font-size * 5.357;     // 75px
+$h2-font-size: $base-font-size * 3;         // 42px 
+$h3-font-size: $base-font-size * 2.285;     // 32px 
+$h4-font-size: $base-font-size * 1.714;     // 24px
+
+$base-spacing: $base-line-height * $font-lrg;
+$small-spacing: $base-spacing / 2;
+
+// Borders
+$base-border-radius: rem(4);
+$circle-border-radius: 50%;
 $base-border-color: $light-gray;
 $base-border: 1px solid $base-border-color;
 
+// Font Colors
+$base-font-color: $dark-gray;
+$action-color: $green;
+
 // Background Colors
-$base-background-color: #fff;
+$base-background-color: $white;
 $secondary-background-color: tint($base-border-color, 75%);
 
 // Forms
-$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow: inset 0 1px 3px rgba($dark-gray, 0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
 
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+// Z-index
+$base-z-index: 0;
