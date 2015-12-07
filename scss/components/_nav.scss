@@ -1,48 +1,40 @@
-$navigation-color: $gray;
-$navigation-color-hover: $dark-gray;
-$navigation-height: rem(50);
-
-// Nav
+// Nav and top logo
 
 .navigation {
   @include outer-container;
-  @include margin(rem(90) null rem(40) null);
+  @include margin(rem(90) null rem(60) null);
   font-family: $open-sans;
-  min-height: $navigation-height;
+  min-height: rem(50);
   z-index: 999;
 }
 
 .navigation__wrapper {
-  @include align-items(baseline);
-  @include clearfix;
-  @include display(flex);
-  @include flex-direction(row);
-  @include justify-content(space-between);
-  @include margin(auto rem(50));
-  @include span-columns(12);
   position: fixed;
-  z-index: 9999;
-
-  @include media ($viewport-lrg) {
-    margin: auto;
-  }
-}
-
-.navigation__brand {
-  @include flex(1 0 0);
-  @include flex-grow(1);
 }
 
 .navigation__brand--title {
   color: $green;
+  display: block;
   font-family: $helvetica;
-  font-size: $font-sm;
+  font-size: $base-font-size;
   font-weight: $font-weight-bold;
   letter-spacing: rem(2);
   margin: 0;
   text-transform: uppercase;
 }
 
+.navigation__brand--info,
 .navigation__brand--mail {
-  color: $navigation-color;
+  color: $gray;
+  display: block;
+  font-family: $helvetica;
+  font-size: $font-sm;
+
+  a {
+    color: $gray;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
