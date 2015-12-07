@@ -4,6 +4,7 @@
 
     @include media ($viewport-lrg) {
         @include shift(1);
+        margin-right: 8.5298%;
     }
 }
 
