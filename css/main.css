@@ -323,7 +323,7 @@ html {
     clear: both;
     content: "";
     display: table; }
-  @media screen and (min-width: 49rem) {
+  @media screen and (min-width: 47rem) {
     .container {
       margin-left: 8.5298%; } }
 
@@ -334,7 +334,7 @@ html {
   width: 82.94039%; }
   .inner-container:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 49rem) {
+  @media screen and (min-width: 47rem) {
     .inner-container {
       float: left;
       display: block;
@@ -348,7 +348,7 @@ html {
   font-size: 2rem;
   font-weight: 800;
   line-height: 1.5; }
-  @media screen and (min-width: 49rem) {
+  @media screen and (min-width: 47rem) {
     .intro__heading,
     .intro__paragraph {
       font-size: 3.9375rem;
