@@ -1,19 +1,25 @@
 .container {
     @include outer-container;
+    @include shift(2);
+
+    @include media ($viewport-lrg) {
+        @include shift(1);
+    }
 }
 
 .inner-container {
-    @include margin(rem(10) rem(50));
+    @include span-columns(10);
 
     @include media ($viewport-lrg) {
-        @include margin(auto auto rem(180) auto);
+        @include span-columns(12);
     }
 }
 
 .intro__heading,
 .intro__paragraph {
     font-size: rem(32);
-    font-weight: $font-weight-bold;;
+    font-weight: $font-weight-bold;
+    line-height: $base-line-height;
 
     @include media ($viewport-lrg) {
         font-size: $base-font-size * 4.5;
