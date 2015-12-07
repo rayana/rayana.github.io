@@ -1,29 +1,27 @@
-$navigation-padding: rem(16);
-$navigation-color: $medium-gray;
+$navigation-color: $gray;
 $navigation-color-hover: $dark-gray;
-$navigation-height: rem(150);
-$navigation-active-link-color: transparentize($dark-gray, 0.5);
+$navigation-height: rem(50);
 
 // Nav
 
 .navigation {
+  @include outer-container;
+  @include margin(rem(90) null rem(40) null);
   font-family: $open-sans;
   min-height: $navigation-height;
-  @include outer-container;
   z-index: 999;
 }
 
 .navigation__wrapper {
-  @include span-columns(12);
+  @include align-items(baseline);
   @include clearfix;
   @include display(flex);
   @include flex-direction(row);
   @include justify-content(space-between);
-  @include align-items(baseline);
-  z-index: 9999;
   @include margin(auto rem(50));
+  @include span-columns(12);
   position: fixed;
-  top: 0;
+  z-index: 9999;
 
   @include media ($viewport-lrg) {
     margin: auto;
@@ -33,55 +31,18 @@ $navigation-active-link-color: transparentize($dark-gray, 0.5);
 .navigation__brand {
   @include flex(1 0 0);
   @include flex-grow(1);
-  text-transform: uppercase;
 }
 
-.navigation__brand--link {
+.navigation__brand--title {
+  color: $green;
   font-family: $helvetica;
   font-size: $font-sm;
   font-weight: $font-weight-bold;
   letter-spacing: rem(2);
+  margin: 0;
+  text-transform: uppercase;
 }
 
-.navigation__menu {
-  @include flex(1 0 0);
-  @include flex-grow(1);
-  font-size: $font-sm;
-}
-
-.navigation__list {
-  display: inline;
-  margin: auto;
-
-  @include media ($viewport-lrg) {
-    margin-left: rem(70);
-  }
-}
-
-.navigation__list-item {
-  display: inline;
-  line-height: $navigation-height;
-  padding-right: rem(20);
-
-  @include media ($viewport-lrg) {
-    display: inline;
-    line-height: $navigation-height;
-    text-decoration: none;
-  }
-}
-
-.navigation__list-item--link {
+.navigation__brand--mail {
   color: $navigation-color;
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 400;
-
-  @include media ($viewport-lrg) {
-    padding-right: 1em;
-  }
-
-  &:focus,
-  &:hover {
-    color: $navigation-color-hover;
-  }
 }
