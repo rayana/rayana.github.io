@@ -3,20 +3,14 @@
 .navigation {
   @include outer-container;
   @include margin(rem(90) null rem(60) null);
-  font-family: $open-sans;
   min-height: rem(50);
   z-index: 999;
-}
-
-.navigation__wrapper {
-  position: fixed;
 }
 
 .navigation__brand--title {
   color: $green;
   display: block;
-  font-family: $helvetica;
-  font-size: $base-font-size;
+  font-size: $font-lrg;
   font-weight: $font-weight-bold;
   letter-spacing: rem(2);
   margin: 0;
@@ -25,10 +19,7 @@
 
 .navigation__brand--info,
 .navigation__brand--mail {
-  color: $gray;
   display: block;
-  font-family: $helvetica;
-  font-size: $font-sm;
 
   a {
     color: $gray;
