@@ -136,7 +136,6 @@ th {
   vertical-align: middle; }
 
 body {
-  color: #333;
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-feature-settings: "kern", "liga", "pnum";
   font-size: 0.875rem;
@@ -159,9 +158,11 @@ p {
 a {
   color: #1be8cf;
   text-decoration: none;
-  transition: color 150ms ease; }
+  transition: color 150ms ease;
+  transition: all 0.3s ease 0s; }
   a:active, a:focus, a:hover {
-    color: #14ae9b; }
+    color: #14ae9b;
+    opacity: 0.75; }
 
 hr {
   border-bottom: 1px solid #d6d6d6;
@@ -307,7 +308,6 @@ html {
 
 .footer {
   display: inline-block;
-  font-family: "Open Sans", sans-serif;
   margin-bottom: 3.125rem;
   width: 100%; }
 
@@ -406,7 +406,6 @@ html {
   margin-right: auto;
   margin-top: 5.625rem;
   margin-bottom: 3.75rem;
-  font-family: "Open Sans", sans-serif;
   min-height: 3.125rem;
   z-index: 999; }
   .navigation::after {
@@ -414,14 +413,10 @@ html {
     content: "";
     display: table; }
 
-.navigation__wrapper {
-  position: fixed; }
-
 .navigation__brand--title {
   color: #1be8cf;
   display: block;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 0.875rem;
+  font-size: 1.25rem;
   font-weight: 800;
   letter-spacing: 0.125rem;
   margin: 0;
@@ -429,10 +424,7 @@ html {
 
 .navigation__brand--info,
 .navigation__brand--mail {
-  color: #999;
-  display: block;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 0.75rem; }
+  display: block; }
   .navigation__brand--info a,
   .navigation__brand--mail a {
     color: #999; }
