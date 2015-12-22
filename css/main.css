@@ -181,7 +181,14 @@ small {
   color: #666; }
 
 body {
+  border-color: #1be8cf;
+  border-style: solid;
+  border-width: 10px;
   color: #666; }
+  body ::-moz-selection {
+    background-color: #1be8cf; }
+  body ::selection {
+    background-color: #1be8cf; }
 
 html {
   box-sizing: border-box; }
