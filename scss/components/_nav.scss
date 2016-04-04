@@ -1,0 +1,31 @@
+// Nav and top logo
+
+.navigation {
+  @include outer-container;
+  @include margin(rem(90) null rem(60) null);
+  min-height: rem(50);
+  z-index: 999;
+}
+
+.navigation__brand--title {
+  color: $green;
+  display: block;
+  font-size: $font-lrg;
+  font-weight: $font-weight-bold;
+  letter-spacing: rem(2);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.navigation__brand--info,
+.navigation__brand--mail {
+  display: block;
+
+  a {
+    color: $gray;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

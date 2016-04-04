@@ -1,0 +1,88 @@
+.container {
+    @include outer-container;
+    @include shift(2);
+
+    @include media ($viewport-lrg) {
+        @include shift(1);
+        margin-right: 8.5298%;
+    }
+}
+
+.inner-container {
+    @include span-columns(10);
+
+    @include media ($viewport-lrg) {
+        @include span-columns(12);
+    }
+}
+
+.intro__heading,
+.intro__paragraph {
+    font-size: rem(32);
+    font-weight: $font-weight-bold;
+    line-height: $base-line-height;
+
+    @include media ($viewport-lrg) {
+        font-size: $base-font-size * 4.5;
+        line-height: rem(75);
+        margin-bottom: rem(50);
+    }
+}
+
+.project {
+    @include margin(null null rem(60) null);
+    @include padding(rem(200) 0 rem(120) 0);
+    background-color: $white;
+    clear: both;
+    width: 100%;
+}
+
+.project--green{
+    @extend .project;
+    background-color: lighten($green, 45);
+}
+
+
+
+
+// Page Frame
+%page-frame {
+    height: rem(10);
+    background: $green;
+    position: fixed;
+    margin: rem(20);
+}
+
+.frame--top {
+    @extend %page-frame;
+    left: 0; 
+    right: 0;
+    top: 0;
+}
+
+.frame--bottom {
+    @extend %page-frame;
+    left: 0; 
+    right: 0;
+    bottom: 0;
+}
+
+.frame--right {
+    background: #1BE8CF;
+    position: fixed;
+    margin: 20px;
+    width: 10px;
+    top: 0; 
+    bottom: 0;
+    right: 0;
+}
+
+.frame--left {
+    background: #1BE8CF;
+    position: fixed;
+    margin: 20px;
+    width: 10px;
+    top: 0; 
+    bottom: 0;
+    left: 0;
+}
