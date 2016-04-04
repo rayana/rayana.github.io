@@ -1,0 +1,8 @@
+body {
+	border: 10px solid $green;
+    color: $medium-gray;
+
+    @include selection {
+      background-color: $green;
+    }
+}

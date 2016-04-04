@@ -1,0 +1,8 @@
+.footer {
+	@include margin(rem(50) null rem(50) null);
+	display: inline-block;
+}
+
+.footer--heart {
+  color: $pink;
+}

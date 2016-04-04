@@ -1,0 +1,72 @@
+
+// Projects
+.projects {
+    @include outer-container;
+    @include shift(1);
+    padding-top: rem(100);
+
+    h2, h3 {
+        font-size: rem(40);
+        margin-bottom: 0;
+    }
+
+    h3 {
+        font-weight: normal;
+    }
+}
+
+.projects--wrapper {
+    @include margin(rem(100) null rem(100) null);
+    background-color: $light-green;
+}
+
+.projects__info {
+    @include clearfix;
+    @include align-items(stretch);
+    @include display(flex);
+    @include flex-wrap(wrap);
+    clear: both;
+    margin-top: rem(100);
+
+    h4 {
+        font-size: rem(28);
+    }
+}
+
+.projects__img {
+    @include flex(1 1 40em);
+    @include align-self(stretch);
+    display: block;
+
+    img {
+        display: block;
+        margin-bottom: rem(40);
+    }
+}
+
+.projects__info--title {
+    @include span-columns(11);
+    @include media ($large-screen-up) {
+        @include span-columns(4);
+    }
+}
+
+.projects__info--description {
+    @extend .projects__info--title;
+    margin-bottom: rem(40);
+}
+
+.projects__info--description-role {
+    @include span-columns(11);
+    margin-bottom: rem(40);
+    @include media ($large-screen-up) {
+        @include span-columns(3);
+    }
+}
+
+.image-border {
+    @include border-top-radius(5px);
+    @include size(100% rem(25));
+    background-color: darken($light-green, 20%);
+    display: block;
+}
