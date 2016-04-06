@@ -1,7 +1,6 @@
 // Projects
 .projects {
     @include outer-container;
-    // @include shift(1);
     padding-top: rem(100);
 
     h2, h3 {
