@@ -48,15 +48,19 @@
 }
 
 .projects__info--description {
-    @extend .projects__info--title;
-    margin-bottom: rem(40);
+    @include span-columns(11);
+
+    @include media ($large-screen-up) {
+        @include span-columns(5);
+        margin-bottom: rem(40);
+    }
 }
 
 .projects__info--description-role {
     @include span-columns(11);
     margin-bottom: rem(40);
     @include media ($large-screen-up) {
-        @include span-columns(3);
+        @include span-columns(2);
     }
 
     span {

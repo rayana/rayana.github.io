@@ -268,24 +268,38 @@ html {
     display: block;
     margin-bottom: 2.5rem; }
 
-.projects__info--title, .projects__info--description {
+.projects__info--title {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 91.4702%; }
-  .projects__info--title:last-child, .projects__info--description:last-child {
+  .projects__info--title:last-child {
     margin-right: 0; }
   @media screen and (min-width: 900px) {
-    .projects__info--title, .projects__info--description {
+    .projects__info--title {
       float: left;
       display: block;
       margin-right: 3.57866%;
       width: 48.21067%; }
-      .projects__info--title:last-child, .projects__info--description:last-child {
+      .projects__info--title:last-child {
         margin-right: 0; } }
 
 .projects__info--description {
-  margin-bottom: 2.5rem; }
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 91.4702%; }
+  .projects__info--description:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 900px) {
+    .projects__info--description {
+      float: left;
+      display: block;
+      margin-right: 3.57866%;
+      width: 61.158%;
+      margin-bottom: 2.5rem; }
+      .projects__info--description:last-child {
+        margin-right: 0; } }
 
 .projects__info--description-role {
   float: left;
@@ -300,7 +314,7 @@ html {
       float: left;
       display: block;
       margin-right: 3.57866%;
-      width: 35.26334%; }
+      width: 22.316%; }
       .projects__info--description-role:last-child {
         margin-right: 0; } }
   .projects__info--description-role span {
