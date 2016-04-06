@@ -1,26 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-.app-header {
-  margin-top: 5.625rem;
-  margin-bottom: 3.75rem;
-  min-height: 3.125rem;
-  z-index: 999; }
-
-.app-header--title {
-  color: #1be8cf;
-  display: block;
-  font-weight: bold;
-  letter-spacing: 0.125rem;
-  margin: 0;
-  text-transform: uppercase; }
-
-.app-header--role {
-  display: block; }
-  .app-header--role a {
-    color: #999; }
-    .app-header--role a:hover {
-      text-decoration: underline; }
-
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   appearance: none;
   background-color: #1be8cf;
@@ -30,7 +9,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;
   display: inline-block;
   font-family: "Montserrat", sans-serif;
-  font-size: 0.875rem;
+  font-size: 1em;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
@@ -60,7 +39,7 @@ label,
 select {
   display: block;
   font-family: "Montserrat", sans-serif;
-  font-size: 0.875rem; }
+  font-size: 1em; }
 
 label {
   font-weight: 600;
@@ -78,7 +57,7 @@ select[multiple=multiple] {
   box-shadow: inset 0 1px 3px rgba(51, 51, 51, 0.06);
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  font-size: 0.875rem;
+  font-size: 1em;
   margin-bottom: 0.9375rem;
   padding: 0.625rem;
   transition: border-color 150ms ease;
@@ -160,7 +139,7 @@ th {
 body {
   font-family: "Montserrat", sans-serif;
   font-feature-settings: "kern", "liga", "pnum";
-  font-size: 0.875rem;
+  font-size: 1em;
   line-height: 1.5; }
 
 h1,
@@ -170,11 +149,11 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", sans-serif;
+  font-size: 1em;
   line-height: 1.2;
   margin: 0 0 0.9375rem; }
 
 p {
-  font-size: 0.99925rem;
   margin: 0 0 1.875rem; }
 
 a {
@@ -199,7 +178,6 @@ picture {
   max-width: 100%; }
 
 small {
-  font-size: 0.75rem;
   color: #666; }
 
 body {
@@ -226,93 +204,117 @@ html {
 .footer--heart {
   color: #f0a8e6; }
 
-.container {
+.projects {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  margin-left: 17.05961%; }
-  .container::after {
+  padding-top: 6.25rem; }
+  .projects::after {
     clear: both;
     content: "";
     display: table; }
-  @media screen and (min-width: 47rem) {
-    .container {
-      margin-left: 8.5298%;
-      margin-right: 8.5298%; } }
+  .projects h2, .projects h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0; }
+  .projects h3 {
+    font-weight: normal; }
 
-.inner-container {
+.projects--wrapper {
+  margin-top: 6.25rem;
+  margin-bottom: 6.25rem;
+  background-color: #F4FBFA; }
+
+.projects__info {
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  box-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  -o-align-items: stretch;
+  align-items: stretch;
+  -ms-flex-align: stretch;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  clear: both;
+  margin-top: 6.25rem; }
+  .projects__info::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .projects__info h4 {
+    font-size: 1.75rem; }
+
+.projects__img {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 82.94039%; }
-  .inner-container:last-child {
+  width: 100%; }
+  .projects__img:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 47rem) {
-    .inner-container {
+  .projects__img img {
+    display: block;
+    margin-bottom: 2.5rem; }
+
+.projects__info--title, .projects__info--description {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 91.4702%; }
+  .projects__info--title:last-child, .projects__info--description:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 900px) {
+    .projects__info--title, .projects__info--description {
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 100%; }
-      .inner-container:last-child {
+      margin-right: 3.57866%;
+      width: 48.21067%; }
+      .projects__info--title:last-child, .projects__info--description:last-child {
         margin-right: 0; } }
 
-.intro__heading,
-.intro__paragraph {
-  font-size: 2rem;
-  font-weight: 800;
-  line-height: 1.5; }
-  @media screen and (min-width: 47rem) {
-    .intro__heading,
-    .intro__paragraph {
-      font-size: 3.9375rem;
-      line-height: 4.6875rem;
-      margin-bottom: 3.125rem; } }
+.projects__info--description {
+  margin-bottom: 2.5rem; }
 
-.project, .project--green {
-  margin-bottom: 3.75rem;
-  padding: 12.5rem 0 7.5rem;
-  background-color: #fff;
-  clear: both;
-  width: 100%; }
+.projects__info--description-role {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 91.4702%;
+  margin-bottom: 2.5rem; }
+  .projects__info--description-role:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 900px) {
+    .projects__info--description-role {
+      float: left;
+      display: block;
+      margin-right: 3.57866%;
+      width: 35.26334%; }
+      .projects__info--description-role:last-child {
+        margin-right: 0; } }
+  .projects__info--description-role span {
+    display: block; }
 
-.project--green {
-  background-color: #ebfdfb; }
+.image-border {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 1.5625rem;
+  width: 100%;
+  background-color: #a9e0d8;
+  display: block; }
 
-.frame--top, .frame--bottom {
-  height: 0.625rem;
-  background: #1be8cf;
-  position: fixed;
-  margin: 1.25rem; }
-
-.frame--top {
-  left: 0;
-  right: 0;
-  top: 0; }
-
-.frame--bottom {
-  left: 0;
-  right: 0;
-  bottom: 0; }
-
-.frame--right {
-  background: #1BE8CF;
-  position: fixed;
-  margin: 20px;
-  width: 10px;
-  top: 0;
-  bottom: 0;
-  right: 0; }
-
-.frame--left {
-  background: #1BE8CF;
-  position: fixed;
-  margin: 20px;
-  width: 10px;
-  top: 0;
-  bottom: 0;
-  left: 0; }
-
-.navigation {
+.app-header {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
@@ -320,26 +322,75 @@ html {
   margin-bottom: 3.75rem;
   min-height: 3.125rem;
   z-index: 999; }
-  .navigation::after {
+  .app-header::after {
     clear: both;
     content: "";
     display: table; }
 
-.navigation__brand--title {
+.app-header--title {
   color: #1be8cf;
   display: block;
-  font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: bold;
   letter-spacing: 0.125rem;
   margin: 0;
   text-transform: uppercase; }
 
-.navigation__brand--info,
-.navigation__brand--mail {
+.app-header--role {
   display: block; }
-  .navigation__brand--info a,
-  .navigation__brand--mail a {
+  .app-header--role a {
     color: #999; }
-    .navigation__brand--info a:hover,
-    .navigation__brand--mail a:hover {
+    .app-header--role a:hover {
       text-decoration: underline; }
+
+.container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-right: 8%;
+  margin-left: 8%; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.inner-content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .inner-content:last-child {
+    margin-right: 0; }
+
+.inner-content--text p {
+  font-size: 2em;
+  font-weight: bold; }
+  @media screen and (min-width: 900px) {
+    .inner-content--text p {
+      font-size: 3em;
+      margin-bottom: 3.125rem; } }
+
+.navigation__wrapper {
+  position: relative; }
+  .navigation__wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.navigation {
+  float: left;
+  padding-top: 0.25rem;
+  text-align: center; }
+
+.navigation__menu {
+  display: block;
+  margin: 0;
+  padding: 0; }
+
+.navigation__menu--link {
+  background: transparent;
+  display: inline;
+  text-decoration: none;
+  width: auto; }
+  .navigation__menu--link a {
+    display: inline-block;
+    padding-right: 1rem; }

@@ -3,6 +3,7 @@ $blue: #477dca;
 $dark-gray: #333;
 $gray: #999;
 $green: #1be8cf;
+$light-green: #F4FBFA;
 $light-gray: #d6d6d6;
 $medium-gray: #666;
 $pink: #f0a8e6;
@@ -17,19 +18,19 @@ $font-weight-bold: 800;
 $font-italic: italic;
 
 // Font Sizes
-$base-font-size: rem(14);
+$base-font-size: 1em;
 $base-line-height: 1.5;
 $heading-line-height: 1.2;
-$font-xs: rem(10);
-$font-sm: rem(12);
-$font-lrg: rem(20);
+// $font-xs: rem(10);
+// $font-sm: rem(12);
+// $font-lrg: rem(20);
 
-$h1-font-size: $base-font-size * 5.357;     // 75px
-$h2-font-size: $base-font-size * 3;         // 42px 
-$h3-font-size: $base-font-size * 2.285;     // 32px 
-$h4-font-size: $base-font-size * 1.714;     // 24px
+// $h1-font-size: $base-font-size * 5.357;     // 75px
+// $h2-font-size: $base-font-size * 3;         // 42px 
+// $h3-font-size: $base-font-size * 2.285;     // 32px 
+// $h4-font-size: $base-font-size * 1.714;     // 24px
 
-$base-spacing: $base-line-height * $font-lrg;
+$base-spacing: $base-line-height * rem(20);
 $small-spacing: $base-spacing / 2;
 
 // Borders

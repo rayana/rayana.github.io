@@ -15,12 +15,13 @@ h4,
 h5,
 h6 {
   font-family: $heading-font-family;
+  font-size: $base-font-size;
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
 }
 
 p {
-  font-size: $base-font-size * 1.142;   // 16px
+  // font-size: $base-font-size * 1.142;   // 16px
   margin: 0 0 $base-spacing;
 }
 
@@ -53,6 +54,6 @@ picture {
 }
 
 small {
-    font-size: $font-sm;
+    // font-size: $font-sm;
     color: $medium-gray;
 }

@@ -1,5 +1,5 @@
 .app-header {
-  // @include outer-container;
+  @include outer-container;
   @include margin(rem(90) null rem(60) null);
   min-height: rem(50);
   z-index: 999;
