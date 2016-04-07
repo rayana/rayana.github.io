@@ -1,6 +1,10 @@
 .container {
     @include outer-container;
-    // @include margin(null 8% null 8%);
+    @include margin(null 8% null 8%);
+
+    @include media ($large-screen-up) {
+        margin: auto;
+    }
 }
 
 .inner-content {
