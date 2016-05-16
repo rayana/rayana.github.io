@@ -198,8 +198,7 @@ html {
 
 .footer {
   display: inline-block;
-  margin-bottom: 3.125rem;
-  width: 100%; }
+  margin-bottom: 3.125rem; }
 
 .footer--heart {
   color: #f0a8e6; }
@@ -213,18 +212,17 @@ html {
     clear: both;
     content: "";
     display: table; }
-  .projects h2, .projects h3 {
-    font-size: 2.5rem;
-    margin-bottom: 0; }
   .projects h3 {
-    font-weight: normal; }
+    font-size: 2em;
+    font-weight: normal;
+    margin-bottom: 0; }
 
 .projects--wrapper {
   margin-top: 6.25rem;
   margin-bottom: 6.25rem;
   background-color: #F4FBFA; }
 
-.projects__info {
+.projects__item {
   -webkit-box-align: stretch;
   -moz-box-align: stretch;
   box-align: stretch;
@@ -248,14 +246,13 @@ html {
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  clear: both;
-  margin-top: 6.25rem; }
-  .projects__info::after {
+  margin-top: 5rem;
+  margin-bottom: 12.5rem;
+  clear: both; }
+  .projects__item::after {
     clear: both;
     content: "";
     display: table; }
-  .projects__info h4 {
-    font-size: 1.75rem; }
 
 .projects__img {
   float: left;
@@ -268,57 +265,20 @@ html {
     display: block;
     margin-bottom: 2.5rem; }
 
-.projects__info--title {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 91.4702%; }
-  .projects__info--title:last-child {
-    margin-right: 0; }
-  @media screen and (min-width: 900px) {
-    .projects__info--title {
-      float: left;
-      display: block;
-      margin-right: 3.57866%;
-      width: 48.21067%; }
-      .projects__info--title:last-child {
-        margin-right: 0; } }
-
+.projects__info--title,
 .projects__info--description {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 91.4702%; }
+  width: 65.88078%;
+  margin-left: 8.5298%;
+  margin-bottom: 3.75rem; }
+  .projects__info--title:last-child,
   .projects__info--description:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 900px) {
-    .projects__info--description {
-      float: left;
-      display: block;
-      margin-right: 3.57866%;
-      width: 61.158%;
-      margin-bottom: 2.5rem; }
-      .projects__info--description:last-child {
-        margin-right: 0; } }
 
-.projects__info--description-role {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 91.4702%;
-  margin-bottom: 2.5rem; }
-  .projects__info--description-role:last-child {
-    margin-right: 0; }
-  @media screen and (min-width: 900px) {
-    .projects__info--description-role {
-      float: left;
-      display: block;
-      margin-right: 3.57866%;
-      width: 22.316%; }
-      .projects__info--description-role:last-child {
-        margin-right: 0; } }
-  .projects__info--description-role span {
-    display: block; }
+.projects__info--description-role span {
+  display: block; }
 
 .image-border {
   border-top-left-radius: 5px;
@@ -329,17 +289,17 @@ html {
   display: block; }
 
 .app-header {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 5.625rem;
   margin-bottom: 3.75rem;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
   min-height: 3.125rem;
   z-index: 999; }
-  .app-header::after {
-    clear: both;
-    content: "";
-    display: table; }
+  .app-header:last-child {
+    margin-right: 0; }
 
 .app-header--title {
   color: #1be8cf;
@@ -359,32 +319,24 @@ html {
 .container {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto;
-  margin-right: 8%;
-  margin-left: 8%; }
+  margin-right: auto; }
   .container::after {
     clear: both;
     content: "";
     display: table; }
-  @media screen and (min-width: 900px) {
-    .container {
-      margin: auto; } }
 
 .inner-content {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 82.94039%;
+  margin-left: 8.5298%; }
   .inner-content:last-child {
     margin-right: 0; }
 
 .inner-content--text p {
   font-size: 2em;
-  font-weight: bold; }
-  @media screen and (min-width: 900px) {
-    .inner-content--text p {
-      font-size: 3em;
-      margin-bottom: 3.125rem; } }
+  margin-bottom: 3.125rem; }
 
 .navigation__wrapper {
   position: relative; }
@@ -395,8 +347,7 @@ html {
 
 .navigation {
   float: left;
-  padding-top: 0.25rem;
-  text-align: center; }
+  padding-top: 0.25rem; }
 
 .navigation__menu {
   display: block;

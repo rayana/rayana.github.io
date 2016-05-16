@@ -1,52 +1,13 @@
 .container {
     @include outer-container;
-    @include margin(null 8% null 8%);
-
-    @include media ($large-screen-up) {
-        margin: auto;
-    }
 }
 
 .inner-content {
-    @include span-columns(12);
+    @include span-columns(10);
+    @include shift(1);
 }
 
 .inner-content--text p {
-    font-size: $base-font-size * 2; // 28
-    font-weight: bold;
-
-    @include media ($large-screen-up) {
-        font-size: $base-font-size * 3; // 42
-        margin-bottom: rem(50);
-    }
-}
-
-.navigation__wrapper {
-    @include clearfix;
-    position: relative;
-}
-
-.navigation {
-    float: left;
-    padding-top: rem(4);
-    text-align: center;
-}
-
-.navigation__menu {
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-
-// Nav items
-.navigation__menu--link {
-    background: transparent;
-    display: inline;
-    text-decoration: none;
-    width: auto;
-
-    a {
-        display: inline-block;
-        padding-right: rem(16);
-    }
+    font-size: $base-font-size * 2;
+    margin-bottom: rem(50);
 }

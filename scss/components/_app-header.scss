@@ -1,6 +1,7 @@
 .app-header {
-  @include outer-container;
   @include margin(rem(90) null rem(60) null);
+  @include span-columns(10);
+  @include shift(1);
   min-height: rem(50);
   z-index: 999;
 }

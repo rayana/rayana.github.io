@@ -3,13 +3,10 @@
     @include outer-container;
     padding-top: rem(100);
 
-    h2, h3 {
-        font-size: rem(40);
-        margin-bottom: 0;
-    }
-
     h3 {
+        font-size: $base-font-size * 2; // 42
         font-weight: normal;
+        margin-bottom: 0;
     }
 }
 
@@ -18,17 +15,13 @@
     background-color: $light-green;
 }
 
-.projects__info {
+.projects__item {
     @include clearfix;
     @include align-items(stretch);
     @include display(flex);
     @include flex-wrap(wrap);
+    @include margin(rem(80) null rem(200) null);
     clear: both;
-    margin-top: rem(100);
-
-    h4 {
-        font-size: rem(28);
-    }
 }
 
 .projects__img {
@@ -40,29 +33,14 @@
     }
 }
 
-.projects__info--title {
-    @include span-columns(11);
-    @include media ($large-screen-up) {
-        @include span-columns(4);
-    }
-}
-
+.projects__info--title,
 .projects__info--description {
-    @include span-columns(11);
-
-    @include media ($large-screen-up) {
-        @include span-columns(5);
-        margin-bottom: rem(40);
-    }
+    @include span-columns(8);
+    @include shift(1);
+    margin-bottom: rem(60);
 }
 
 .projects__info--description-role {
-    @include span-columns(11);
-    margin-bottom: rem(40);
-    @include media ($large-screen-up) {
-        @include span-columns(2);
-    }
-
     span {
         display: block;
     }
