@@ -1,28 +1,99 @@
-.navigation__wrapper {
-    @include clearfix;
-    position: relative;
-}
 
 .navigation {
-    float: left;
-    padding-top: rem(4);
-}
+  $large-screen: 50em !default;
+  $medium-screen: 30em !default;
+  @include margin(rem(90) null rem(60) null);
+  @include span-columns(10);
+  @include shift(1);
+  min-height: rem(50);
 
-.navigation__menu {
+  // Nav menu
+  .navigation-wrapper {
+    @include clearfix;
+    position: relative;
+  }
+
+  .logo {
+    color: $green;
     display: block;
+    float: left;
+    font-weight: bold;
+    letter-spacing: rem(2);
     margin: 0;
-    padding: 0;
-}
+    text-transform: uppercase;
 
-// Nav items
-.navigation__menu--link {
-    background: transparent;
-    display: inline;
-    text-decoration: none;
-    width: auto;
+    small {
+        display: block;
+        font-weight: normal;
+        margin-top: rem(5);
+        text-transform: none;
 
-    a {
-        display: inline-block;
-        padding-right: rem(16);
+        a {
+          color: $gray;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
+
+    @include media ($medium-screen) {
+      display: block;
+    }
+
+    @include media ($large-screen) {
+      float: left;
+    }
+
+    img {
+      max-height: 2em;
+      padding-right: 1em;
+    }
+  }
+
+  nav {
+    float: none;
+
+    @include media ($medium-screen) {
+      float: right;
+      text-align: right;
+      line-height: 1.5em;
+    }
+  }
+
+  ul.navigation-menu {
+    clear: both;
+    margin: 0 auto;
+    overflow: visible;
+    padding-top: rem(20);
+
+    @include media ($medium-screen) {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  // Nav items
+  ul li.nav-link {
+    display: inline;
+    text-align: left;
+    margin-right: rem(20);
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include media ($medium-screen) {
+      background: transparent;
+      text-align: right;
+    }
+  }
+
+  li.nav-link a {
+    display: inline-block;
+
+    @include media ($large-screen) {
+      padding-right: 1em;
+    }
+  }
 }

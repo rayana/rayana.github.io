@@ -19,7 +19,9 @@ $font-italic: italic;
 
 // Font Sizes
 $base-font-size: 1em;
-$base-line-height: 1.5;
+$body-font-size: rem(16);
+$font-sm: rem(12);
+$base-line-height: 1.7;
 $heading-line-height: 1.2;
 
 $base-spacing: $base-line-height * rem(20);
