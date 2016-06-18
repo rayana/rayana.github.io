@@ -154,6 +154,7 @@ h6 {
   margin: 0 0 1.0625rem; }
 
 p {
+  font-size: 1em;
   margin: 0 0 2.125rem; }
 
 a {
@@ -372,11 +373,14 @@ footer {
 
 .intro,
 .project-title {
-  font-size: 2em;
   margin-bottom: 3.125rem; }
   .intro p,
-  .project-title p {
-    font-weight: bold; }
+  .intro h2,
+  .project-title p,
+  .project-title h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 0 2.125rem; }
   .intro small,
   .project-title small {
     display: block;

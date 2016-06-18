@@ -116,11 +116,13 @@
 // Intro
 .intro,
 .project-title {
-  font-size: $base-font-size * 2;
   margin-bottom: rem(50);
 
-  p {
+  p,
+  h2 {
+    font-size: $base-font-size * 2;
     font-weight: bold;
+    margin: 0 0 $base-spacing;
   }
 
   small {
