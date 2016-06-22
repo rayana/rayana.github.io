@@ -8,6 +8,23 @@
   <title>Rayana Verissimo | User Interface Engineer</title>
   <link href="css/main.css" rel="stylesheet">
   <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+          window.location.hash = target;
+        });
+      });
+    });
+  </script>
 </head>
 <body>
   <section class="container">
@@ -20,7 +37,7 @@
         </a>
         <nav role="navigation">
           <ul class="navigation-menu">
-            <li class="nav-link">view <a href="index.html#projects">MY WORK</a></li>
+            <li class="nav-link">view <a href="#projects">MY WORK</a></li>
             <li class="nav-link">more <a href="about.html">ABOUT ME</a></li>
           </ul>
         </nav>
