@@ -4,7 +4,8 @@ rayana.github.io
 
 This is still a work in progress and uses:
 
-* SASS
+* [SASS](http://sass-lang.com)
 * [Bourbon](https://github.com/thoughtbot/bourbon)
 * [Neat](https://github.com/thoughtbot/neat)
 * [Refills](https://github.com/thoughtbot/refills)
+* [Emoji CSS](https://github.com/afeld/emoji-css/)
