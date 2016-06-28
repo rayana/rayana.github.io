@@ -53,6 +53,11 @@
     }
   }
 
+  .disabled {
+    pointer-events: none;
+    cursor: default;
+  }
+
   .grid-item--dark {
     color: $dark-gray !important;
 

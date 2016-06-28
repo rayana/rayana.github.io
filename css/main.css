@@ -320,6 +320,9 @@ footer {
       width: 33.33333%; } }
   .grid-items .grid-item:nth-child(1):focus, .grid-items .grid-item:nth-child(1):hover {
     background-color: #329e91; }
+.grid-items .disabled {
+  pointer-events: none;
+  cursor: default; }
 .grid-items .grid-item--dark {
   color: #333 !important; }
   .grid-items .grid-item--dark small {
