@@ -380,6 +380,7 @@ footer {
   .project-title h2 {
     font-size: 2em;
     font-weight: bold;
+    line-height: 1.7;
     margin: 0 0 2.125rem; }
   .intro small,
   .project-title small {
@@ -535,3 +536,5 @@ footer {
     @media screen and (min-width: 900px) {
       .navigation li.nav-link a {
         padding-right: 1em; } }
+
+/*# sourceMappingURL=main.css.map */
