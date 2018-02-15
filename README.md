@@ -2,7 +2,7 @@ rayana.github.io
 ======
 [**rayana.github.io**](http://rayana.github.io/) is my personal portfolio and landing page.
 
-This is still a work in progress and uses:
+## This projec is still a work in progress and uses:
 
 * [SASS](http://sass-lang.com)
 * [Bourbon](https://github.com/thoughtbot/bourbon)
