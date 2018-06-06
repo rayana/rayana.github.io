@@ -1,0 +1,99 @@
+// Grid
+
+.wrapper > div {
+	display: inline-block;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(1, [col] auto);
+	grid-template-rows: repeat(2, [row] auto);
+}
+
+.section--left {
+	grid-column: col 1 / span 1;
+	grid-row: row 1;
+	background-image: url("../../img/diva.jpg");
+	background-position: center center;
+	background-size: cover;
+	height: 50vh;
+}
+
+.section--right {
+	grid-column: col 1 / span 1;
+	grid-row: row 2;
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: $section-padding;
+	background-color: $pink;
+}
+
+.logo {
+	grid-column: col 1 / span 1;
+	grid-row: row;
+	padding: $section-padding;
+}
+
+.block--about {
+	grid-column: 1 / 2;
+	grid-row: 2;
+	padding: $section-padding 0;
+}
+
+.block--work {
+	grid-column: 1 / 2;
+	grid-row: 3;
+	padding: $section-padding 0;
+}
+
+.block--writings {
+	grid-column: 1 / 2;
+	grid-row: 4;
+	padding: $section-padding 0;
+}
+
+.block--footer {
+	grid-column: 1/2;
+	grid-row: 5;
+}
+
+/* tablet styles ------------------------------------ */
+@media only screen and (min-width: 600px) {
+	.section--left {
+		background-position: center;
+		background-size: cover;
+		height: 80vh;
+	}
+}
+
+/* desktop styles ------------------------------------ */
+@media only screen and (min-width: 960px) {
+	.wrapper {
+		grid-template-columns: repeat(2, [col] 1fr);
+		grid-template-rows: repeat(2, [row] auto);
+	}
+
+	.logo {
+		padding: $section-padding * 2;
+	}
+
+	.section--left {
+		grid-column: col 1 / span 1;
+		grid-row: row 2;
+		height: 100vh;
+	}
+
+	.section--right {
+		grid-column: col 2 / span 1;
+		grid-row: row 2;
+		display: grid;
+		grid-template-columns: 1fr;
+		height: 100vh;
+		overflow: auto;
+		padding: $section-padding * 2;
+	}
+
+	.block--about {
+			padding: ($section-padding * 3) 0 $section-padding 0;
+	}
+}

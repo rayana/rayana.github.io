@@ -1,0 +1,22 @@
+// List component
+
+.list {
+	list-style-type: none;
+}
+
+.list--horizontal li {
+	display: inline;
+	padding: 1rem;
+}
+
+.list--vertical li {
+	line-height: 1.7;
+}
+
+.list__item {
+	padding-bottom: 0.5rem;
+
+	&:first-child {
+		padding-left: 0;
+	}
+}
