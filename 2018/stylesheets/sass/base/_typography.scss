@@ -1,0 +1,66 @@
+/*
+==============================================
+Type Scale
+============================================== */
+/**
+ * Headlines base styles
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $purple;
+	font-weight: lighter;
+	font-family: $font-serif;
+}
+
+h1 {
+	@extend %clearfix;
+	font-size: $font-size-h1;
+
+	@include breakpoint(sm) {
+		font-size: $font-size-h2;
+	}
+}
+
+h2 {
+  @extend %clearfix;
+	line-height: 1.4;
+	font-size: $font-size-h3;
+
+  @include breakpoint(lg) {
+		font-size: $font-size-h2;
+
+  }
+}
+
+h3 {
+  @extend %clearfix;
+	font-size: $font-size-h3;
+
+  @include breakpoint(sm) {
+		font-size: $font-size-base;
+  }
+}
+
+/* TEXT
+============================================= */
+/**
+ * Paragraph base styles
+ */
+p {
+	color: $text-color;
+	margin-bottom: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+/**
+ * Small text base styles
+ */
+small {
+	color: $carbon;
+	font-family: $font-sans;
+}

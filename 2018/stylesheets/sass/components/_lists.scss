@@ -1,0 +1,69 @@
+/* LIST
+============================================= */
+.list--horizontal li {
+	display: inline;
+	padding: 1rem;
+}
+
+.list__item {
+	font-family: $font-serif;
+	margin-bottom: 1.5rem;
+
+	&:first-child {
+		padding-left: 0;
+	}
+
+	&:last-child {
+		padding-right: 0;
+		margin-bottom: 0;
+	}
+}
+
+.list__title {
+	color: $pink-dark;
+	font-size: $font-size-base;
+	font-weight: lighter;
+	margin-bottom: 0.5rem;
+	text-decoration: underline;
+}
+
+.list__text {
+	color: $carbon;
+	font-family: $font-sans;
+	margin-bottom: 0.5rem;
+}
+
+.list__meta {
+	font-size: $font-size-xs;
+	font-family: $font-sans;
+}
+
+.list-block {
+	list-style-type: none;
+}
+
+.list-block__item {
+	@extend .list__item;
+	margin-bottom: 3rem;
+}
+
+.list-block__link {
+	border-bottom: 0;
+	text-decoration: none;
+	display: block;
+	transition: all 0.2s ease;
+}
+
+.list-block__link:focus .list__title,
+.list-block__link:hover .list__title {
+	color: $purple;
+	transition: all 0.2s ease;
+}
+
+/* desktop styles ------------------------------------ */
+@media only screen and (min-width: 960px) {
+	.list--horizontal {
+		display: inline;
+		padding: 1rem;
+	}
+}

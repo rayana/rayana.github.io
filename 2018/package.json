@@ -1,0 +1,17 @@
+{
+  "name": "portfolio-rayana",
+  "version": "1.0.0",
+  "description": "Rayana's personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass stylesheets/sass/main.scss stylesheets/css/main.css -w"
+  },
+  "keywords": [
+    "Portfolio"
+  ],
+  "author": "Rayana Verissimo",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}

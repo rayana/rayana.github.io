@@ -1,0 +1,84 @@
+/* BASE
+============================================= */
+/**
+	* Border-Box http:/paulirish.com/2012/box-sizing-border-box-ftw/
+	*/
+* {
+	box-sizing: border-box;
+}
+/**
+	* Zero out margin and padding on these elements
+	*/
+blockquote,
+body,
+div,
+fieldset,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+iframe,
+label,
+legend,
+li,
+nav,
+object,
+ol,
+p,
+section,
+table,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	color: $carbon;
+}
+
+/**
+	* Remove list styles from ordered and unordered lists by default
+	*/
+ol,
+ul {
+	list-style: none;
+}
+
+/* BODY
+============================================= */
+/**
+ * Main body container base styles
+ */
+body {
+	font-size: $font-size-base;
+	font-weight: normal;
+	font-family: $font-sans;
+}
+
+/* LINKS
+============================================= */
+/**
+ * General link base styles
+ */
+a {
+	color: $pink-dark;
+	transition: color 0.15s ease-out;
+
+	&:focus,
+	&:hover {
+		color: $purple;
+	}
+}
+
+/**
+ * Highlight color
+ */
+::-moz-selection { background: $pink-light; }
+::selection { background: $pink-light; }

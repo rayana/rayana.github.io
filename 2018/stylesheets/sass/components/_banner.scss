@@ -1,0 +1,14 @@
+/* BANNER
+============================================= */
+.banner {
+  background-color: $purple;
+  padding: 5px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+
+  small {
+    color: $white;
+  }
+}
