@@ -2,19 +2,9 @@
 ==============================================
 Type Scale
 ============================================== */
-
-::-moz-selection { background: $pink-light; }
-::selection { background: $pink-light; }
-
-html {
-  font-size: 16px; /* base unit for rems */
-  line-height: 1.6;
-  font-family: 'Work Sans', Verdana, sans-serif;
-  color: $carbon;
-}
-
-/* Headlines */
-
+/**
+ * Headlines base styles
+ */
 h1,
 h2,
 h3,
@@ -27,46 +17,50 @@ h6 {
 }
 
 h1 {
-  font-size: 2rem;
+	@extend %clearfix;
+	font-size: $font-size-h1;
+
+	@include breakpoint(sm) {
+		font-size: $font-size-h2;
+	}
 }
 
 h2 {
-  font-size: 1.5rem;
+  @extend %clearfix;
+	line-height: 1.4;
+	font-size: $font-size-h3;
+
+  @include breakpoint(lg) {
+		font-size: $font-size-h2;
+
+  }
 }
 
 h3 {
-  font-family: $font-sans;
-  font-size: .8rem;
-  font-weight: normal;
-  text-transform: uppercase;
+  @extend %clearfix;
+	font-size: $font-size-h3;
+
+  @include breakpoint(sm) {
+		font-size: $font-size-base;
+  }
 }
 
-@media (min-width: 960px) {
-  h1 { font-size: 2.5rem; }
-  h2 { font-size: 2rem; }
+/* TEXT
+============================================= */
+/**
+ * Paragraph base styles
+ */
+p {
+	color: $text-color;
+	margin-bottom: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
 }
 
+/**
+ * Small text base styles
+ */
 small {
-  color: $carbon;
-  font-family: $font-sans;
-  font-size: 0.9rem;
-}
-
-small a {
-  color: rgba(0,0,0,0.5);
-  border-bottom: 1px solid rgba(0,0,0,0.25);
-}
-
-p small {
-  display: block;
-  margin-top: 0.5rem;
-  line-height: 1.4;
-}
-
-/* Component styles */
-.logo h1 {
-	color: $white;
-  font-weight: bold;
-  line-height: 1;
-	text-decoration: underline;
+	color: $carbon;
+	font-family: $font-sans;
 }

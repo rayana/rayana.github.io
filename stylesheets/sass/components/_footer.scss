@@ -1,0 +1,33 @@
+/* FOOTER
+============================================= */
+.footer {
+	display: flex;
+	display: grid;
+	grid-column: 1;
+	grid-row: 5;
+	background-color: $pink;
+	font-family: $font-serif;
+	padding: $section-padding;
+
+	ul {
+		font-size: $font-size-xs;
+	}
+}
+
+.footer__copyright {
+	color: $purple;
+	font-size: $font-size-xs;
+}
+
+/* desktop styles ------------------------------------ */
+@media only screen and (min-width: 960px) {
+	.footer {
+		grid-column: 2;
+		grid-template-columns: 1fr 1fr;
+		padding: 0 ($section-padding * 2);
+
+		.list {
+			justify-self: end;
+		}
+	}
+}

@@ -1,0 +1,32 @@
+/* LOGO
+============================================= */
+.c-logo {
+	grid-column: 1;
+	grid-row: 1;
+	justify-self: start;
+	padding: $section-padding;
+}
+
+.c-logo__link {
+	color: $white;
+
+	&:hover {
+		color: $purple;
+	}
+}
+
+.c-logo__name {
+	color: $white;
+	font-weight: bold;
+}
+
+.c-logo__name--break {
+	display: block;
+}
+/* desktop styles ------------------------------------ */
+@media only screen and (min-width: 960px) {
+	.c-logo {
+		justify-self: start;
+		padding-left: $section-padding;
+	}
+}

@@ -1,15 +1,22 @@
+/* NAV
+============================================= */
 .nav {
-	grid-column: 1 / 2;
-	grid-row: 1;
-	// padding: $section-padding 0;
-	align-self: start;
-	justify-self: start;
-}
+	grid-row: 2;
+	background-color: $pink;
+	display: grid;
+	place-self: end stretch;
+	padding: 1rem;
 
+	ul {
+		justify-self: center;
+	}
+}
 /* desktop styles ------------------------------------ */
 @media only screen and (min-width: 960px) {
 	.nav {
-		align-self: center;
+		grid-column: 2;
+		grid-row: 1;
 		justify-self: center;
+		padding: 0;
 	}
 }
