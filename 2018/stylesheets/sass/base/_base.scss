@@ -40,26 +40,18 @@ ul {
 }
 
 html {
-	color: $carbon;
-}
-
-/**
-	* Remove list styles from ordered and unordered lists by default
-	*/
-ol,
-ul {
-	list-style: none;
 }
 
 /* BODY
 ============================================= */
 /**
- * Main body container base styles
+ * Basic typography styles
  */
 body {
+	color: $carbon;
+	// font-family: $font-sans;
 	font-size: $font-size-base;
 	font-weight: normal;
-	font-family: $font-sans;
 }
 
 /* LINKS
@@ -68,8 +60,10 @@ body {
  * General link base styles
  */
 a {
+	@extend %underline;
 	color: $pink-dark;
 	transition: color 0.15s ease-out;
+	text-decoration: none;
 
 	&:focus,
 	&:hover {

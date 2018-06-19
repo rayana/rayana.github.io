@@ -1,25 +1,52 @@
-/* Variables
-============================================= */
-$pink: #FFB4EC;
+/// Pink light
+/// @type Color
 $pink-light: #FFE8F9;
+
+/// Pink
+/// @type Color
+$pink: #FFB4EC;
+
+/// Pink dark
+/// @type Color
 $pink-dark: #F244C4;
-$purple: #4C0A75;
+
+/// Purple light
+/// @type Color
 $purple-light: #9781A4;
+
+/// Purple
+/// @type Color
+$purple: #4C0A75;
+
+/// Carbon
+/// @type Color
 $carbon: #382842;
+
+/// White
+/// @type Color
 $white: #fff;
 
-$font-serif: 'Courier', serif;
+/// Regular font stack
+/// @type List
 $font-sans: 'Work Sans', sans-serif;
 
+/// Serif font stack
+/// @type List
+$font-serif: 'Courier', serif;
+
+/// Base text color
+/// @type list
+$text-color: $carbon;
+
+
+// TODO: Needs refactor
 $font-size-base: 1.125rem;
 $font-size-sm: 1rem;
 $font-size-xs: 0.777rem;
 $font-size-lg: 1.375rem;
 
-$font-size-h1: $font-size-base * 2;
+$font-size-h1: $font-size-base * 2.2;
 $font-size-h2: $font-size-base * 1.777;
 $font-size-h3: $font-size-base * 1.222;
-
-$text-color: $carbon;
 
 $section-padding: 2.5rem;

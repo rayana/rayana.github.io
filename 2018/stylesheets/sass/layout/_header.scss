@@ -1,0 +1,72 @@
+/* LOGO
+============================================= */
+.c-header {
+	display: flex;  /* flexbox fallback */
+	align-items: center; /* aligns header items to the center */
+	flex-basis: 100%; /* span header 100% width of the container */
+	flex-direction: column; /* displays logo under menu on sm screen size */
+	flex-wrap: wrap;
+
+	display: grid; /* css grid */
+	grid-column: 1;
+	grid-row: 1;
+	justify-self: stretch;
+
+	z-index: 3; /* positions the header component over all other boxes */
+}
+
+/* desktop styles ------------------------------------ */
+@media only screen and (min-width: 960px) {
+	.c-header {
+		flex-direction: row; /* displays logo and menu inline lg screen size */
+		position: absolute; /* positions the header on top of the main content */
+		width: 100%; /* stretches the header to 100% width of the viewport */
+
+		grid-column: 1 / span 2;
+		grid-row: 1;
+		justify-self: stretch;
+		grid-template-rows: 100px;
+
+		background-color: transparent;
+		height: 100px; /* allows click on underlying boxes */
+	}
+}
+
+/* LOGO: NEEDS REFACTOR
+============================================= */
+.c-logo {
+	flex: 1;
+
+	grid-column: 1;
+	grid-row: 1;
+	justify-self: start;
+
+	padding: $section-padding;
+}
+
+.c-logo__link {
+	color: $white;
+
+	&:hover {
+		color: $purple;
+	}
+}
+
+.c-logo__name {
+	color: $white;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.c-logo__name--break {
+	display: block;
+}
+
+/* desktop styles ------------------------------------ */
+@media only screen and (min-width: 960px) {
+	.c-logo {
+		justify-self: start;
+
+		padding-left: $section-padding;
+	}
+}

@@ -7,7 +7,6 @@
 
 .list__item {
 	font-family: $font-serif;
-	margin-bottom: 1.5rem;
 
 	&:first-child {
 		padding-left: 0;
@@ -21,15 +20,21 @@
 
 .list__title {
 	color: $pink-dark;
+
 	font-size: $font-size-base;
 	font-weight: lighter;
-	margin-bottom: 0.5rem;
-	text-decoration: underline;
+	// margin-bottom: 0.5rem;
+	// text-decoration: underline;
+
+	&:hover {
+		color: $purple;
+	}
 }
 
 .list__text {
 	color: $carbon;
 	font-family: $font-sans;
+	font-size: $font-size-sm;
 	margin-bottom: 0.5rem;
 }
 
@@ -49,15 +54,16 @@
 
 .list-block__link {
 	border-bottom: 0;
-	text-decoration: none;
-	display: block;
-	transition: all 0.2s ease;
+
+	// text-decoration: none;
+	display: inline-block;
+	// transition: all 0.2s ease;
 }
 
 .list-block__link:focus .list__title,
 .list-block__link:hover .list__title {
-	color: $purple;
-	transition: all 0.2s ease;
+	// color: $purple;
+	// transition: all 0.2s ease;
 }
 
 /* desktop styles ------------------------------------ */
@@ -66,4 +72,16 @@
 		display: inline;
 		padding: 1rem;
 	}
+}
+
+.external-link {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: -5px;
+    fill: $pink-dark;
+}
+
+a:hover .external-link {
+    fill: $purple;
 }

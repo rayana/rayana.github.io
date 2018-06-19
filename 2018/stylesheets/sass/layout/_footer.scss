@@ -1,33 +1,58 @@
 /* FOOTER
 ============================================= */
-.footer {
+.c-footer {
 	display: flex;
+	flex: 1;
+	flex-basis: 100%;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+
 	display: grid;
 	grid-column: 1;
 	grid-row: 5;
+	justify-content: start;
+
 	background-color: $pink;
 	font-family: $font-serif;
 	padding: $section-padding;
 
 	ul {
+		justify-content: flex-start;
+		display: flex;
+		flex-basis: 100%;
+
 		font-size: $font-size-xs;
 	}
 }
 
-.footer__copyright {
+.c-footer__copyright {
+	flex-basis: 100%;
+
 	color: $purple;
 	font-size: $font-size-xs;
 }
 
 /* desktop styles ------------------------------------ */
 @media only screen and (min-width: 960px) {
-	.footer {
+	.c-footer {
 		grid-column: 2;
 		grid-template-columns: 1fr 1fr;
+
 		padding: 0 ($section-padding * 2);
+
+// TODO: Needs refactor
+		ul {
+			flex-basis: 20%;
+			justify-content: flex-end;
+		}
 
 		.list {
 			justify-self: end;
 		}
+	}
+
+	.c-footer__copyright {
+		flex-basis: 25%;
 	}
 }

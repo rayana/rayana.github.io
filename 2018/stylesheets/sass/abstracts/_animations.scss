@@ -1,0 +1,22 @@
+/**
+	* Animate underline svg background on links
+	*/
+@-webkit-keyframes animateUnderline {
+    0% {
+        background-position: 20% bottom
+    }
+
+    100% {
+        background-position: 90% bottom
+    }
+}
+
+@keyframes animateUnderline {
+    0% {
+        background-position: 20% bottom
+    }
+
+    100% {
+        background-position: 90% bottom
+    }
+}

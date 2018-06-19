@@ -1,0 +1,18 @@
+/**
+ * Set animated underline svg background on links
+ */
+%underline {
+	background-image: url(../../img/underline.svg);
+	background-repeat: no-repeat;
+	background-size: auto 22%;
+	background-position: 1% bottom;
+	padding-bottom: 10px;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+
+	&:focus,
+	&:hover {
+		-webkit-animation: animateUnderline 2.5s linear infinite; // from 'abstractst/_animation.scss'
+		animation: animateUnderline 2.5s linear infinite;
+	}
+}

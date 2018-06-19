@@ -1,0 +1,119 @@
+/**
+ * Home styles
+ */
+.p-home {
+	background-color: $pink;
+}
+
+/**
+ * Home DIVA image styles
+ */
+.s-home__photo {
+	flex: 1;
+	height: 50vh;
+	width: 100vw;
+
+	grid-column: col 1 / span 1;
+	grid-row: 1;
+}
+
+.s-home__photo--img {
+	background-position: 50% 50%;
+	height: 50vh;
+	object-fit: cover;
+	position: initial;
+	width: 100vw;
+}
+
+/* desktop styles ------------------------------------ */
+@media only screen and (min-width: 960px) {
+	.s-home__photo {
+		grid-column: col 1 / span 1;
+		grid-row: 1;
+
+		height: 100vh;
+		width: 50vw;
+	}
+
+	.s-home__photo--img {
+		position: fixed;
+		height: 100vh;
+		width: 50vw;
+	}
+}
+
+/**
+ * Home side content styles
+ */
+.s-home__content {
+	display: grid; /* css grid */
+	grid-column: col 1 / span 1;
+	grid-row: 3;
+	grid-template-columns: 1fr;
+
+	padding: $section-padding;
+	z-index: 2;
+}
+
+.b-intro {
+	grid-column: 1 / 2;
+	grid-row: 2;
+
+	padding-bottom: 2.5rem;
+}
+
+.b-subtitle {
+	font-family: $font-sans;
+	font-size: $font-size-xs;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+}
+
+.b-work {
+	grid-column: 1 / 2;
+	grid-row: 3;
+
+	padding-bottom: $section-padding;
+}
+
+.b-writings {
+	grid-column: 1 / 2;
+	grid-row: 4;
+
+	padding-top: $section-padding;
+}
+
+/* desktop styles ------------------------------------ */
+@media only screen and (min-width: 960px) {
+	.s-home__content {
+		display: flex;  /* flexbox fallback */
+		flex-direction: column;
+
+		display: grid;  /* css grid */
+		grid-column: col 2 / span 1;
+		grid-row: 1;
+		grid-template-columns: 1fr;
+
+		padding: $section-padding * 2;
+		width: 50vw;
+	}
+
+	.b-intro {
+		display: block;
+		position: relative;
+
+		order: 1;
+
+		clear: both;
+		padding: ($section-padding * 3) 0 $section-padding 0;
+	}
+
+	.b-work {
+		order: 2;
+	}
+
+	.b-writings {
+		order: 2;
+	}
+}

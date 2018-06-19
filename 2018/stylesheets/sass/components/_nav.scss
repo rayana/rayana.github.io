@@ -1,10 +1,15 @@
-/* NAV
+/* PRIMARY NAV
 ============================================= */
-.nav {
-	grid-row: 2;
-	background-color: $pink;
+.c-primary-nav {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+
 	display: grid;
+	grid-row: 2;
 	place-self: end stretch;
+
+	background-color: $pink;
 	padding: 1rem;
 
 	ul {
@@ -13,10 +18,11 @@
 }
 /* desktop styles ------------------------------------ */
 @media only screen and (min-width: 960px) {
-	.nav {
+	.c-primary-nav {
 		grid-column: 2;
 		grid-row: 1;
 		justify-self: center;
+
 		padding: 0;
 	}
 }
